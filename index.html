@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>School calendar</title>
+  </head>
+  <body>
+    <div class="head">
+      <h1>~Calendar~</h1>
+    </div>
+    <div class="search">
+      <input type="text" id="searchValue" />
+      <button class="searchButton" onclick="searchSpecialDays()">search</button>
+    </div>
+    <div class="container">
+      <div class="cont0">
+        <div class="cont1">
+          <div class="cont2">
+            <button class="button" onclick="backMonth()"><</button>
+            <div class="month"></div>
+            <button class="button" onclick="nextMonth()">></button>
+          </div>
+          <div class="week week-layout"></div>
+          <div class="day day-layout"></div>
+        </div>
+      </div>
+      <div class="specialDays"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
